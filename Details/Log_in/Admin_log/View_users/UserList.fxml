@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="expense_tracker.UserListController" stylesheets="@style.css"
+>
+    <TableView fx:id="userTable" layoutX="20" layoutY="20" prefWidth="360" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="usernameColumn" text="Username" prefWidth="180"/>
+            <TableColumn fx:id="passwordColumn" text="Password" prefWidth="180"/>
+        </columns>
+    </TableView>
+    <Button text="Back" layoutX="20" layoutY="350" onAction="#handleBack"/>
+
+</AnchorPane>
+
