@@ -1,0 +1,49 @@
+/* Style for the whole window */
+.root {
+    -fx-background-color: 	#48b795;
+    -fx-font-family: "Segoe UI", sans-serif;
+
+}
+
+/* Style for all buttons */
+.button {
+    -fx-background-color: #0075ff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 8 16;
+}
+
+.button:hover {
+    -fx-background-color: #a99456;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #333;
+    -fx-font-size: 17px;
+    -fx-font-family: "Arial Black"
+}
+
+/* Table headers */
+.table-view .column-header {
+    -fx-background-color: #dcdcdc;
+    -fx-font-weight: bold;
+}
+
+/* Table rows */
+.table-row-cell {
+    -fx-background-color: white;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #cce5ff;
+}
+
+/* Text fields */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-padding: 4 8;
+}
