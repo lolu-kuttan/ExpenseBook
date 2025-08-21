@@ -9,6 +9,6 @@ To save the expenses on a device so that we can carry the " expense diary" anywh
 * Easy and elder friendly design
 
 ## Technology used
-  Frontend : CSS , JavaFX , Fxml
+  Frontend : CSS , JavaFX , Fxml .
   Backend : SQlite
        
