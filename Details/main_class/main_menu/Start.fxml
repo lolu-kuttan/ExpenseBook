@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="expense_tracker.StartController" prefWidth="400" prefHeight="300" stylesheets="@style.css"
+>
+    <VBox alignment="CENTER" spacing="20" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="50">
+        <Label text="Select Login Type" style="-fx-font-size: 18;" />
+        <Button fx:id="userButton" text="User" prefWidth="200" />
+        <Button fx:id="adminButton" text="Admin" prefWidth="200" />
+    </VBox>
+</AnchorPane>
