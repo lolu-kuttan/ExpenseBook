@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="expense_tracker.ExpenseFormController"
+            prefWidth="400" prefHeight="400" stylesheets="@style.css"
+>
+
+        <VBox spacing="10" layoutX="30" layoutY="30">
+
+            <Label text="Date:" />
+            <TextField fx:id="dateField" promptText="YYYY-MM-DD" />
+
+            <Label text="Category:" />
+            <TextField fx:id="categoryField" promptText="e.g. Food, Travel" />
+
+            <Label text="Amount:" />
+            <TextField fx:id="amountField" promptText="e.g. 123.45" />
+
+            <Label text="Description:" />
+            <TextArea fx:id="descriptionField" prefRowCount="3" promptText="Optional" />
+
+            <Button text="Add Expense" onAction="#handleAddExpense" />
+
+            <Button text="View All Expenses" onAction="#handleViewExpenses"/>
+
+
+            <Label fx:id="statusLabel" style="-fx-text-fill: green;" />
+            <Button text="Back" onAction="#handleBackToUserLogin" />
+
+        </VBox>
+</AnchorPane>
+
