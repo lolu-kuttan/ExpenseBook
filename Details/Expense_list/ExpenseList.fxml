@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="expense_tracker.ExpenseListController"
+            prefWidth="600" prefHeight="500" stylesheets="@style.css"
+>
+    <HBox layoutX="20" layoutY="10" spacing="10">
+        <TextField fx:id="dateSearchField" promptText="Search by Date (YYYY-MM-DD)" />
+        <TextField fx:id="categorySearchField" promptText="Search by Category" />
+        <Button text="Search" onAction="#handleSearch"/>
+        <Button text="Clear" onAction="#handleClearSearch"/>
+    </HBox>
+        <TableView fx:id="expenseTable" layoutX="50" layoutY="80" prefWidth="660" prefHeight="360">
+            <columns>
+                <TableColumn fx:id="dateColumn" text="Date" prefWidth="100"/>
+                <TableColumn fx:id="categoryColumn" text="Category" prefWidth="100"/>
+                <TableColumn fx:id="amountColumn" text="Amount" prefWidth="100"/>
+                <TableColumn fx:id="descriptionColumn" text="Description" prefWidth="140"/>
+                <TableColumn fx:id="actionColumn" text="Actions" prefWidth="160"/>
+
+            </columns>
+        </TableView>
+    <Label fx:id="totalLabel" layoutX="20" layoutY="440" text="Total: ₹ 0.00" style="-fx-font-weight: bold;"/>
+
+</AnchorPane>
