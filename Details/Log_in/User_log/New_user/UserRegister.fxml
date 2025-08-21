@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="expense_tracker.UserRegisterController" prefWidth="400" prefHeight="300"
+            stylesheets="@style.css">
+    <VBox alignment="CENTER" spacing="15" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.topAnchor="40" AnchorPane.bottomAnchor="40">
+        <Label text="Create New User" style="-fx-font-size: 18;" />
+        <TextField fx:id="usernameField" promptText="New Username" />
+        <PasswordField fx:id="passwordField" promptText="New Password" />
+        <Button text="Create Account" onAction="#handleCreateAccount" />
+        <Label fx:id="statusLabel" text="" style="-fx-text-fill: red;" />
+        <Button text="Back to Login" onAction="#handleBackToLogin" />
+    </VBox>
+</AnchorPane>
+
